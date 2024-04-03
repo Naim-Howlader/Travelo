@@ -101,7 +101,7 @@ export default function Home() {
 
           </div>
           <div className="button-section flex justify-center pt-10 md:pt-14">
-            <SecondaryButton name="More"/>
+            <SecondaryButton name="More Places"/>
           </div>
           </div>
         </section>

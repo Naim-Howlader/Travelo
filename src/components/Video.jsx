@@ -16,8 +16,8 @@ export default function Video() {
   return (
     <>
     <div>
-        <div className='w-full h-screen'>
-            <div className='relative h-[60%] md:h-[80%] lg:h-screen w-full'>
+        <div className='w-full lg:h-screen'>
+            <div className='relative h-[400px] md:h-[500px] lg:h-screen w-full'>
                 <img src={videoImage} className='w-full h-full object-cover' alt="" srcSet="" />
                 <div className='absolute inset-0 bg-blue-300 opacity-20'></div>
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50'>

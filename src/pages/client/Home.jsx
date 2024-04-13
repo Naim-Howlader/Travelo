@@ -19,6 +19,8 @@ import placeCardImg4 from "../../assets/images/place-card-4.jpg"
 import placeCardImg5 from "../../assets/images/place-card-5.jpg"
 import placeCardImg6 from "../../assets/images/place-card-6.jpg"
 import Video from '../../components/Video';
+import IconSection from './../../components/IconSection';
+import Testimonial from '../../components/Testimonial';
 
 
 export default function Home() {
@@ -111,6 +113,12 @@ export default function Home() {
           <Video/>
         </section>
 
+        <section id='icon-section'>
+          <IconSection/>
+        </section>
+        <section id='testimonial-section' className='pb-20'>
+          <Testimonial/>
+        </section>
       </section>
     </>
   )

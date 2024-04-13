@@ -7,7 +7,7 @@ export default function PopularPlaceCard({img,name,location}) {
       <div className='place-card rounded-lg group cursor-default'>
         <div className='group-hover:shadow-lg group-hover:transition group-hover:duration-300 group-hover:ease-linear'>
         <div className='card-image relative'>
-            <img src={img} alt="" srcSet="" className='rounded-t-lg' />
+            <img src={img} alt="" srcSet="" className='rounded-t-lg w-full' />
             <div className='absolute top-5 left-5'>
                 <div className='bg-[--primary-color] group-hover:bg-[--secondary-color] duration-300 rounded-3xl px-5 py-2'>
                     <p className='text-[16px] text-white font-[600]'>$500</p>

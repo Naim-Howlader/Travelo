@@ -18,6 +18,7 @@ import placeCardImg3 from "../../assets/images/place-card-3.jpg"
 import placeCardImg4 from "../../assets/images/place-card-4.jpg"
 import placeCardImg5 from "../../assets/images/place-card-5.jpg"
 import placeCardImg6 from "../../assets/images/place-card-6.jpg"
+import Video from '../../components/Video';
 
 
 export default function Home() {
@@ -100,10 +101,14 @@ export default function Home() {
           </div>
 
           </div>
-          <div className="button-section flex justify-center pt-10 md:pt-14">
+          <div className="button-section flex justify-center pt-14 pb-2 md:pt-14">
             <SecondaryButton name="More Places"/>
           </div>
           </div>
+        </section>
+
+        <section id='video-section'>
+          <Video/>
         </section>
 
       </section>

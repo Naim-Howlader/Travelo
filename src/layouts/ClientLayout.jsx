@@ -9,7 +9,7 @@ export default function ClientLayout() {
       <main>
         <Outlet/>
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

@@ -21,6 +21,10 @@ import placeCardImg6 from "../../assets/images/place-card-6.jpg"
 import Video from '../../components/Video';
 import IconSection from './../../components/IconSection';
 import Testimonial from '../../components/Testimonial';
+import RecentTrips from '../../components/RecentTrips';
+import recentCard4 from "../../assets/images/recent-card-4.jpeg"
+import recentCard2 from "../../assets/images/recent-card-2.jpeg"
+import recentCard3 from "../../assets/images/recent-card-3.jpeg"
 
 
 export default function Home() {
@@ -116,8 +120,22 @@ export default function Home() {
         <section id='icon-section'>
           <IconSection/>
         </section>
-        <section id='testimonial-section' className='pb-20'>
+
+        <section id='testimonial-section'>
           <Testimonial/>
+        </section>
+
+        <section id='recent-trips'>
+          <div className='px-5 sm:px-20 pb-10 md:pb-20 lg:pb-32'>
+            <div className="text">
+                <h2 className='text-[28px] md:text-[34px] font-[500] text-center pb-10 md:pb-14'>Recent Trips</h2>
+            </div>
+            <div className="recent-cards grid grid-cols-12 gap-y-5 md:gap-x-7">
+                <RecentTrips image={recentCard2} title="Journeys Are Best Measured In New Friends" date="Oct 12, 2019"/>
+                <RecentTrips image={recentCard4} title="Journeys Are Best Measured In New Friends" date="Oct 12, 2019"/>
+                <RecentTrips image={recentCard3} title="Journeys Are Best Measured In New Friends" date="Oct 12, 2019"/>
+            </div>
+          </div>
         </section>
       </section>
     </>

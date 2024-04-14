@@ -10,6 +10,7 @@ export default function Testimonial() {
   return (
     <>
 
+      <div className='pb-20 lg:pb-28'>
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -36,6 +37,7 @@ export default function Testimonial() {
         </SwiperSlide>
         
       </Swiper>
+      </div>
     </>
   );
 }

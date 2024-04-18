@@ -6,7 +6,7 @@ export default function PopularDestinationCard({img,place,placeNumber}) {
       <div className='relative group bg-transparent'>
         <div className='transition-transform transform group-hover:-translate-y-5 duration-300 group-hover:cursor-default'>
         <div className="bg-transparent !important">
-        <img src={img} alt="" srcSet="" className='rounded-lg object-cover  ' />
+        <img src={img} alt=""  className='rounded-lg object-cover  ' />
         </div>
         <div className='bg-black absolute inset-0 opacity-20'></div>
         <div className='absolute bottom-5 left-5'>

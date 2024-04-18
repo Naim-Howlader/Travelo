@@ -4,7 +4,7 @@ import React from 'react'
 export default function RecentTrips({image,title,date}) {
   return (
     <>
-     <div className="single-card col-span-12 md:col-span-6 lg:col-span-4 group">
+     <div className="single-card  group">
         <div>
             <img src={image} alt="" className='rounded-lg md:h-[200px] lg:h-[250px]'/>
         </div>

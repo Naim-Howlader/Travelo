@@ -30,12 +30,12 @@ export default function Hero() {
     >
         <SwiperSlide>
             <div className='relative'>
-                <img src={slider1} alt="" srcSet="" className='w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-screen'/>
+                <img src={slider1} alt=""  className='w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-screen'/>
                 <div className="absolute inset-0 bg-black opacity-25"></div>
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                    <p className='text-[65px] lg:text-[100px] text-center nothing-font text-white'>Indonesia</p>
+                    <p className='text-[65px] lg:text-[100px] text-center nothing-font text-white animate__animated animate__fadeInLeft '>Indonesia</p>
                     <p className='text-center text-white text-base lg:text-xl'>Pixel perfect design with awesome contents</p>
-                    <div className='my-5 lg:my-10 flex justify-center'>
+                    <div className='my-5 lg:my-10 flex justify-center floating-button'>
                     <PrimaryButton name="Explore Now" />
                     </div>
                 </div>
@@ -43,12 +43,12 @@ export default function Hero() {
         </SwiperSlide>
         <SwiperSlide>
             <div className='relative'>
-                <img src={slider2} alt="" srcSet="" className='w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-screen'/>
+                <img src={slider2} alt=""  className='w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-screen'/>
                 <div className="absolute inset-0 bg-black opacity-25"></div>
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                     <p className='text-[65px] lg:text-[100px] text-center nothing-font text-white'>Thailand</p>
                     <p className='text-center text-white text-base lg:text-xl'>Pixel perfect design with awesome contents</p>
-                    <div className='my-5 lg:my-10 flex justify-center'>
+                    <div className='my-5 lg:my-10 flex justify-center floating-button'>
                     <PrimaryButton name="Explore Now" />
                     </div>
                 </div>
@@ -56,12 +56,12 @@ export default function Hero() {
         </SwiperSlide>
         <SwiperSlide>
             <div className='relative'>
-                <img src={slider3} alt="" srcSet="" className='w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-screen'/>
+                <img src={slider3} alt=""  className='w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-screen'/>
                 <div className="absolute inset-0 bg-black opacity-25"></div>
                 <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                     <p className='text-[65px] lg:text-[100px] text-center nothing-font text-white'>Maldives</p>
                     <p className='text-center text-white text-base lg:text-xl'>Pixel perfect design with awesome contents</p>
-                    <div className='my-5 lg:my-10 flex justify-center'>
+                    <div className='my-5 lg:my-10 flex justify-center floating-button'>
                     <PrimaryButton name="Explore Now" />
                     </div>
                 </div>

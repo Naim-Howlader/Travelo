@@ -8,8 +8,6 @@ export default function Header() {
     {name:"Home",link:"/"},
     {name:"About",link:"/about"},
     {name:"Destination",link:"/destination"},
-    {name:"Services",link:"/services"},
-    {name:"Blog",link:"/blog"},
     {name:"Contact",link:"/contact"},
   ];
   let [open,setOpen]=useState(false);

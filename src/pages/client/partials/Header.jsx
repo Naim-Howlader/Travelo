@@ -11,6 +11,12 @@ export default function Header() {
     {name:"Contact",link:"/contact"},
   ];
   let [open,setOpen]=useState(false);
+  const [isOpened, setIsOpened] = useState(false);
+
+  const handleClick = () => {
+    setIsOpened(!isOpened);
+    setOpen(!open);
+  };
   const navStyle =({isActive})=>{
     return{
       color : isActive ? 'black':'grey',
@@ -28,15 +34,42 @@ export default function Header() {
       Travelo
     
     
-    <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+    {/* <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
     <ion-icon name={open ? 'close':'menu'}></ion-icon>
-    </div>
+    </div> */}
 
-    <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full text-center md:w-auto md:pl-20  transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`} >
+
+
+
+    <section className="ham-body md:hidden absolute right-8 top-6">
+      <button
+        className={`menu ${isOpened ? 'opened' : ''}`}
+        onClick={handleClick}
+        aria-expanded={isOpened}
+        aria-label="Main Menu"
+      >
+        <svg width="40" height="40" viewBox="0 0 100 100">
+          <path className="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path className="line line2" d="M 20,50 H 80" />
+          <path className="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <ul className={`md:flex md:items-center glass-bg md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full text-center md:w-auto md:pl-20  transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`} >
       {
         Links.map((link)=>(
           <li key={link.name} className='md:ml-8 text-sm font-[500] md:my-0 my-7'>
-            <NavLink to={link.link} style={navStyle} className='text-gray-800 hover:text-[#1EC6B6] duration-500'>{link.name}</NavLink>
+            <NavLink onClick={handleClick} to={link.link} style={navStyle} className='text-gray-800 hover:text-[#1EC6B6] duration-500'>{link.name}</NavLink>
           </li>
         ))
       }

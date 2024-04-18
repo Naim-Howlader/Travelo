@@ -16,11 +16,11 @@ export default function About() {
     <div className='overflow-x-hidden'>
       <section id='about' >
       <div id='about-bg' className='pt-24 h-full lg:h-screen'>
-      <div class="h-[400px] lg:h-[85%] flex justify-center items-center relative">
-        <img src={aboutImage} alt="Your Image" class="h-full w-full object-cover"/>
+      <div className="h-[400px] lg:h-[85%] flex justify-center items-center relative">
+        <img src={aboutImage} alt="Your Image" className="h-full w-full object-cover"/>
         <div className="absolute inset-0 bg-black opacity-25"></div>
         <div className='absolute top-1/2  transform  -translate-y-1/2 px-5'>
-        <p className='text-[45px] lg:text-[100px] text-center nothing-font text-white '>About Us</p>
+        <p className='text-[45px] lg:text-[100px] text-center nothing-font text-white animate__animated animate__fadeInLeft'>About Us</p>
         <p className='text-center text-white text-base lg:text-xl'>Pixel perfect design with awesome contents</p>
         </div>
       </div>

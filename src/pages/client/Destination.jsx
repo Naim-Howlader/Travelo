@@ -24,11 +24,11 @@ export default function Destination() {
 
       <section id='destination'>
       <div id='destination-bg' className='pt-24 h-full '>
-      <div class="h-[400px] lg:h-[450px]  flex justify-center items-center relative">
-        <img src={destiantionImage} alt="Your Image" class="h-full w-full object-cover"/>
+      <div className="h-[400px] lg:h-[450px]  flex justify-center items-center relative">
+        <img src={destiantionImage} alt="Your Image" className="h-full w-full object-cover"/>
         <div className="absolute inset-0 bg-black opacity-25"></div>
         <div className='absolute top-1/2  transform  -translate-y-1/2 px-5'>
-        <p className='text-[45px] lg:text-[100px] text-center nothing-font text-white'>About Us</p>
+        <p className='text-[45px] lg:text-[100px] text-center nothing-font text-white animate__animated animate__fadeInLeft'>Destination</p>
         <p className='text-center text-white text-base lg:text-xl'>Pixel perfect design with awesome contents</p>
         </div>
       </div>
